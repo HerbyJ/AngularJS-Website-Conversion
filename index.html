@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>Ryan's Site</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="css/carousel.css" rel="stylesheet">
+
+		<link href="css/youtubeCSS.css" rel="stylesheet">
+
+		<!-- AngularJS scripts and customized code -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+		<script src="js/carouselAngularJS.js"></script>
+		<script src="js/headingAngularJS.js"></script>
+		<script src="js/featuretteAngularJS.js"></script>
+	</head>
+	
+	<body ng-app="mainApp">
+
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+				<a class="navbar-brand" href="#">Welcom To Ryan's Site</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#aboutSection">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pdfs/Resume.pdf" target="_blank">Resume</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Coming Soon!</a> <!-- Code Samples (BUTTON TEXT)-->
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="mailto:Dunn.Ryan.01@gmail.com">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main role="main">
+
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" ng-controller="carouselController">
+				<ol class="carousel-indicators" ng-bind-html="htmlIndicators"></ol>
+				<div class="carousel-inner" ng-bind-html="htmlCarousel"></div>
+				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			
+			<div>
+				<center>
+					<iframe class="youtubeVid" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLCyp7jO95RC0SI317jw9aVgB5KqZHPVVX" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe class="youtubeVid" width="560" height="315" src="https://www.youtube.com/embed/-KS-nrHXy8g" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<p>Please enjoy some of my favorite songs, or laugh at my frights while checking out the site.</p>
+				</center>
+				
+			</div>
+				
+			<!-- Marketing messaging and featurettes
+			================================================== -->
+			<!-- Wrap the rest of the page in another container to center all the content. -->
+			<div id="aboutSection">
+				<div class="container marketing">
+					<!-- Three columns of text below the carousel. Refer to headingAngularJS.js for implementation -->
+					<hr class="featurette-divider">
+					<div class="row" ng-controller="rowController" ng-bind-html="htmlHeading"></div>
+					
+					<!-- Featurettes refer to featurettesAngularJS.js for implementation -->
+					<hr class="featurette-divider">
+					<div class="container featurette" ng-controller="featuretteController" ng-bind-html="htmlFeaturette"></div>
+				</div>
+
+				<!-- FOOTER -->
+				<footer class="container">
+					<p class="float-right"><a href="#">Back to top</a></p>
+					<a href="mailto:Dunn.Ryan.01@gmail.com">Contact Me at: Dunn.Ryan.01@gmail.com</a>
+				</footer>
+			</div>
+		</main>
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/holder.min.js"></script>
+	</body>
+</html>
